@@ -47,7 +47,7 @@ function Moovie_Popular() {
       <p>Ma liste :<br></br><br></br> {list2.title} - {list2.release_date}</p>
       {filterList.map((moovie, index) => {
         return (
-          <div keya={moovie.title}>
+          <div key={moovie.title}>
               <div className="size-img">
                 <div className="card">
                   <img className="size-moovie-popular-page" alt="" src={`https://image.tmdb.org/t/p/original/${moovie.backdrop_path}`}></img>
