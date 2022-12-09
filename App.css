@@ -1,0 +1,294 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header-home {
+  background-color: #282c34;
+  /* position: absolute; */
+  padding: 15%;
+}
+
+.App-header-category-popular {
+  background-color: #282c34;
+  /* position: absolute; */
+  padding: 15%;
+  height: 750em;
+}
+
+/* Boutton Title dans la page Popular Moovie */
+
+.button {
+  position: relative;
+  background-color: #040608;
+  color: rgb(20, 187, 48);
+  padding: 3px;
+  top: 3px;
+  left: 3px;
+}
+
+/* Boutton Film Populaire dans la page home */
+
+.button-populaire {
+  border-radius: 10%;
+  background-color: #040608;
+  color: red;
+  width: 15%;
+  cursor: pointer;
+}
+
+/* Boutton Page d'acceuil dans la page populaire moovie */
+
+.button-home {
+  border-radius: 10%;
+  background-color: #040608;
+  color: red;
+  width: 15%;
+  cursor: pointer;
+}
+
+/* modification border radius des input */
+
+input {
+  border-radius: 5%;
+}
+
+.pos-url {
+  position: relative;
+  top: 4px;
+  left: 3px;
+}
+
+.size-img {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  cursor: pointer;
+  transition-duration: 2s;
+
+}
+
+/* debut des films en ligne */
+
+.row-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row-img div{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row-img2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row-img2 div{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* fin des films en ligne */
+
+.position-category-action {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  margin: auto;
+  border-radius: 10%;
+}
+
+/* debut de css pour la categorie Action */
+.size-img-category-action {
+  cursor: pointer;
+  transition-duration: 2s;
+}
+/* Animation hover + translate du paragraphe */
+.size-img-category-action .card .content{
+  transition:0.8s all ease;
+  color:rgb(238, 234, 234);
+  transform:translateX(200px);
+  opacity:0;
+}
+.size-img-category-action:hover .card:hover .content{
+  transform:translateY(-30px);
+  opacity: 1;
+}
+
+.size-img-category-action:hover .card:hover .content .fa-star {
+  color: #f7f406;
+}
+/* fin css pour la catégorie Action */
+
+/* debut du css pour l'hover des dates en verticale de la page Home */
+
+.size-date {
+  position: relative;
+  top: -72%;
+  left: -100px;
+  writing-mode : vertical-lr;
+}
+
+.size-date2 {
+  position: relative;
+  top: -78%;
+  left: -85px;
+  writing-mode : vertical-lr;
+}
+
+
+/* fin css pour hover en verticale */
+
+
+/* debut de css pour la categorie Aventure */
+.size-img-category-aventure {
+  cursor: pointer;
+  transition-duration: 2s;
+}
+/* Animation hover + translate du paragraphe */
+.size-img-category-aventure .card .content{
+  padding:2px;
+  transition:0.8s all ease;
+  color:rgb(238, 234, 234);
+  transform:translateX(200px);
+  opacity:0;
+}
+.size-img-category-aventure:hover .card:hover .content{
+  transform:translateY(-30px);
+  opacity: 1;
+}
+
+.size-img-category-aventure:hover .card:hover .content .fa-star {
+  color: #f7f406;
+}
+
+/* positionnement de la categorie Aventure */
+.category-aventure {
+  background-color: #282c34;
+}
+/* fin css pour la catégorie Aventure */
+
+
+/* debut de css pour la categorie Animation */
+
+.size-img-category-animation {
+  cursor: pointer;
+}
+
+/* Animation hover + translate du paragraphe */
+
+.size-img-category-animation .card .content{
+  width: 50%;
+  padding:2px;
+  transition:0.8s all ease;
+  color:rgb(238, 234, 234);
+  transform:translateX(200px);
+  opacity:0;
+}
+.size-img-category-animation:hover .card:hover .content{
+  transform:translateY(-30px);
+  opacity: 1;
+}
+
+.size-img-category-animation:hover .card:hover .content .fa-star {
+  color: #f7f406;
+}
+
+/* fin css pour la catégorie Animation */
+
+
+/* debut de modification de la page popular moovie */
+
+.list-add { /* css pour la liste en favorie ( petit + sur la page ) */
+  position: relative;
+  text-decoration: none;
+  color: rgb(20, 187, 48);
+  background-color: #040608;
+  padding: 2px;
+  top: 27px;
+  left: -40px;
+  width: 5%;
+  border-radius: 20%;
+}
+
+.size-img:hover{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.size-img .card .content{
+  padding:2px;
+  transition:0.8s all ease;
+  color:rgb(238, 234, 234);
+  transform:translateX(200px);
+  opacity:0;
+}
+.size-img:hover .card:hover .content{
+  transform:translateX(0px);
+  opacity: 1;
+}
+
+.size-moovie-popular-page {
+  width: 150%;
+}
+/* fin modification des hover dans la page popular moovie */
+
+/* modification de toute les balises a */
+a {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  text-align: center;
+}
+
+.custom-btn-toolbar {
+  display: inline !important;
+}
+
+.custom-btn-toolbar > .btn {
+  margin-right: 1rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
